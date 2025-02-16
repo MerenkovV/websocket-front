@@ -11,7 +11,7 @@ class WebSocketService {
 
   // Инициализация WebSocket-соединения
   public connect() {
-    this.socket = new WebSocket("ws://localhost:3001");
+    this.socket = new WebSocket("ws://websocket-back-phi.vercel.app/");
 
     this.socket.onopen = () => {
       console.log("WebSocket connected");
