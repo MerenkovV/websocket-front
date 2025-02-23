@@ -31,7 +31,14 @@ const Chat = observer(() => {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        width: 400,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <div
         style={{
           width: 400,
@@ -74,6 +81,15 @@ const Chat = observer(() => {
           <button onClick={handleSendMessage}>Send</button>
         </div>
       </div>
+
+      <iframe
+        src="http://localhost:5173/"
+        style={{
+          width: 800,
+          height: 400,
+          marginTop: 10,
+        }}
+      ></iframe>
     </div>
   );
 });
